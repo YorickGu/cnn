@@ -4,7 +4,7 @@ import tensorflow as tf
 
 from data_helper import *
 # State which model to use here
-from lstm_model import VDCNN
+from cnn_model import VDCNN
 
 # Parameters settings
 # Data loading params
