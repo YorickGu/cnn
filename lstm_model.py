@@ -44,6 +44,7 @@ class VDCNN():
             b = tf.get_variable('b', [num_classes], initializer=tf.constant_initializer(1.0))
             self.fc3 = tf.matmul(outputs, w) + b
 
+
         # Calculate Mean cross-entropy loss
         with tf.name_scope("loss"):
             self.predictions = tf.argmax(self.fc3, 1, name="predictions")
